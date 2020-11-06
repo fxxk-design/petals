@@ -1,0 +1,25 @@
+{
+  "name": "petals",
+  "version": "0.0.0",
+  "description": "CSS components foundation for Buds",
+  "private": true,
+  "scripts": {
+    "clean:site": "rm -rf ./site/.asset-cache",
+    "serve": "cd ./site && rake run",
+    "predeploy": "npm run clean:site",
+    "deploy": "cd ./site && rake deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ourai/petals.git"
+  },
+  "author": "Ourai Lin <ourairyu@gmail.com> (https://ourai.ws/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ourai/petals/issues"
+  },
+  "homepage": "https://github.com/ourai/petals",
+  "devDependencies": {
+    "handie": "^1.0.14"
+  }
+}

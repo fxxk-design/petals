@@ -9,7 +9,7 @@
 bower_components
 node_modules
 
-/docs/_site
+/site/_site
 
 /dist
 /test
