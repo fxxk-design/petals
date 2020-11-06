@@ -1,6 +1,6 @@
 # [Petals](https://oss.ourai.ws/petals/)
 
-[Petals](https://github.com/petals-ui) provides atomic components for [Buds](https://github.com/ourai/buds).
+[Petals](https://github.com/petals-ui) is born for component-based front-end development, and provides atomic components for [Buds](https://github.com/ourai/buds).
 
 ## Foundation
 
