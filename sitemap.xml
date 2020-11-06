@@ -6,4 +6,10 @@
 <url>
 <loc>https://oss.ourai.ws/petals/</loc>
 </url>
+<url>
+<loc>https://oss.ourai.ws/petals/components/box/</loc>
+</url>
+<url>
+<loc>https://oss.ourai.ws/petals/demos/box-component/</loc>
+</url>
 </urlset>
