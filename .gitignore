@@ -1,0 +1,15 @@
+*.log
+
+.DS_Store
+.git
+.idea
+.asset-cache
+.sass-cache
+
+bower_components
+node_modules
+
+/docs/_site
+
+/dist
+/test
