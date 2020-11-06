@@ -1,0 +1,21 @@
+@import "../demo-helper";
+@import "../../../../node_modules/@petals/basic/helper";
+@import "../../../../node_modules/@petals/box/style/variables";
+@import "../../../../node_modules/@petals/box/style/mixins";
+@import "../../../../node_modules/@petals/box/style/rules";
+
+.Box {
+  background-color: antiquewhite;
+
+  &-header {
+    background-color: pink;
+  }
+
+  &-body {
+    background-color: yellow;
+  }
+
+  &-footer {
+    background-color: aquamarine;
+  }
+}

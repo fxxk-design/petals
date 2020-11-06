@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/ourai/petals",
   "devDependencies": {
+    "@petals/basic": "0.0.0",
+    "@petals/box": "0.0.0",
     "handie": "^1.0.14"
   }
 }

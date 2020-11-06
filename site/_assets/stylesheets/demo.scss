@@ -1,0 +1,35 @@
+@import "./demo-helper";
+@import "../../../node_modules/@petals/basic/base";
+
+body {
+  background-color: #fefefe;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin: 10px;
+
+  + div {
+    padding: 10px;
+    border-top: 1px solid #a6a6a6;
+    border-radius: 0 0 6px 6px;
+    background-color: #fff;
+  }
+}
+
+main {
+  padding: 15px;
+}
+
+section {
+  border: 1px solid #a6a6a6;
+  border-radius: 6px;
+  background-color: #eee;
+
+  + section {
+    margin-top: 15px;
+  }
+}

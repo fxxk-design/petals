@@ -7,6 +7,12 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  components:
+    output: true
+    permalink: /:collection/:path/
+  demos:
+    output: true
+    permalink: /:collection/:path/
 
 # Handling Reading
 exclude:
@@ -81,6 +87,17 @@ defaults:
         slug: ourai
         twitter: ourairyu
       siblings: true
+  - scope:
+      path: ""
+      type: components
+    values:
+      layout: component
+  - scope:
+      path: ""
+      type: demos
+    values:
+      layout: demo
+      statistic: false
 
 
 

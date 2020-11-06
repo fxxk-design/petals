@@ -20,7 +20,7 @@
 | [theme](https://github.com/petals-ui/theme) | Virtual component | ✘ | [`@petals/theme`](https://www.npmjs.com/package/@petals/theme) |
 | [popup](https://github.com/petals-ui/popup) | Virtual component | ✘ | [`@petals/popup`](https://www.npmjs.com/package/@petals/popup) |
 | [form-control](https://github.com/petals-ui/form-control) | Virtual component | ✘ | [`@petals/form-control`](https://www.npmjs.com/package/@petals/form-control) |
-| [box](https://github.com/petals-ui/box) | Box component | ✓ | [`@petals/`](https://www.npmjs.com/package/@petals/) |
+| [box](https://github.com/petals-ui/box) | Box component | ✓ | [`@petals/box`](https://www.npmjs.com/package/@petals/box) |
 | [text](https://github.com/petals-ui/text) | Text component | ✓ | [`@petals/text`](https://www.npmjs.com/package/@petals/text) |
 | button | - | ✘ | - |
 | figure | - | ✘ | - |
