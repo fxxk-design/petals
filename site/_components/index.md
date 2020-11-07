@@ -1,5 +1,6 @@
 ---
-permalink: index.html
+title: 组件
+permalink: components/index.html
 ---
 
 [Petals](https://github.com/petals-ui) is born for component-based front-end development, and provides atomic components for [Buds](https://github.com/ourai/buds).

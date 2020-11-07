@@ -7,6 +7,9 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  docs:
+    output: true
+    permalink: /:collection/:path/
   components:
     output: true
     permalink: /:collection/:path/
@@ -87,6 +90,11 @@ defaults:
         slug: ourai
         twitter: ourairyu
       siblings: true
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: page
   - scope:
       path: ""
       type: components
