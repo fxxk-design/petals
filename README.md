@@ -1,8 +1,18 @@
-# [Petals](https://oss.ourai.ws/petals/)
-
-[Petals](https://github.com/petals-ui) is born for component-based front-end development, and provides atomic components for [Buds](https://github.com/ourai/buds).
+<p align="center">
+  <a href="https://oss.ourai.ws/petals/">
+    <img src="https://avatars3.githubusercontent.com/u/73979619?s=200&v=4" alt="Petals logo" width="200">
+  </a>
+</p>
+<h3 align="center">Petals</h3>
+<p align="center">
+  Born for component-based front-end development, and provides atomic components for <a href="https://github.com/ourai/buds">Buds</a>.
+  <br>
+  <a href="https://oss.ourai.ws/petals/docs/"><strong>Explore Petals docs »</strong></a>
+</p>
 
 ## Composition
+
+This project is work-in-progress, but some sub-projects are ready to use. For details, please see "Status" in the tables below.
 
 ### Foundation
 
