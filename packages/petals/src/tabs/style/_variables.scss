@@ -1,0 +1,17 @@
+@import "../../border/style/variables";
+@import "../../tab-bar/style/variables";
+@import "./metadata";
+@import "./properties";
+
+$petals--tabs-box-shadow: none !default;
+
+$petals--tabs-panes-border-width: var(
+  $__petals--tab-bar-nav-active-border-width,
+  $petals--tab-bar-nav-active-border-width
+) !default;
+$petals--tabs-panes-border-color: var(
+  $__petals--tab-bar-nav-active-border-color,
+  $petals--tab-bar-nav-active-border-color
+) !default;
+$petals--tabs-panes-border-radius: var($__petals--tab-bar-nav-border-radius, $petals--tab-bar-nav-border-radius) !default;
+$petals--tabs-panes-bg: $__petals--white !default;

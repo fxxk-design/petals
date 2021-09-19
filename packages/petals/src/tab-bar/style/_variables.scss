@@ -1,0 +1,30 @@
+@import "../../border/style/variables";
+@import "./settings";
+@import "./metadata";
+@import "./properties";
+
+$petals--tab-bar-bg: transparent !default;
+
+$petals--tab-bar-nav-height: 40px !default;
+$petals--tab-bar-nav-padding-x: 14px !default;
+$petals--tab-bar-nav-padding-y: 0 !default;
+$petals--tab-bar-nav-color: #999 !default;
+$petals--tab-bar-nav-border-width: var($__petals--border-width, $petals--border-width) !default;
+$petals--tab-bar-nav-border-color: transparent !default;
+$petals--tab-bar-nav-border-radius: var($__petals--border-radius-lg, $petals--border-radius-lg) !default;
+
+$petals--tab-bar-nav-hover-color: var($__petals--primary-hover, $petals--primary-hover) !default;
+
+$petals--tab-bar-nav-active-color: var($__petals--primary, $petals--primary) !default;
+$petals--tab-bar-nav-active-bg: $__petals--white !default;
+$petals--tab-bar-nav-active-border-width: var($__petals--tab-bar-nav-border-width, $petals--tab-bar-nav-border-width) !default;
+$petals--tab-bar-nav-active-border-color: var($__petals--border-color, $petals--border-color) !default;
+$petals--tab-bar-nav-active-box-shadow: none !default;
+
+$petals--tab-bar-nav-separator-width: 1px !default;
+$petals--tab-bar-nav-separator-height: 18px !default;
+$petals--tab-bar-nav-separator-bg: #dcdfe5 !default;
+
+$petals--tab-bar-scroll-button-width: 32px !default;
+$petals--tab-bar-scroll-button-color: rgba(51, 51, 51, 0.73) !default;
+$petals--tab-bar-scroll-button-disabled-color: rgba(51, 51, 51, 0.25) !default;

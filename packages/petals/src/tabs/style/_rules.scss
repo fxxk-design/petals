@@ -1,0 +1,85 @@
+@include component-rules($petals--tabs-component-name) {
+  border-radius:
+    var($__petals--tab-bar-nav-border-radius, $petals--tab-bar-nav-border-radius)
+    var($__petals--tab-bar-nav-border-radius, $petals--tab-bar-nav-border-radius)
+    var($__petals--tabs-panes-border-radius, $petals--tabs-panes-border-radius)
+    var($__petals--tabs-panes-border-radius, $petals--tabs-panes-border-radius);
+  box-shadow: var($__petals--tabs-box-shadow, $petals--tabs-box-shadow);
+
+  &-panes {
+    position: relative;
+    padding: 12px 16px;
+    border:
+      var($__petals--tabs-panes-border-width, $petals--tabs-panes-border-width) solid
+      var($__petals--tabs-panes-border-color, $petals--tabs-panes-border-color);
+    border-radius:
+      0 0 var($__petals--tabs-panes-border-radius, $petals--tabs-panes-border-radius)
+      var($__petals--tabs-panes-border-radius, $petals--tabs-panes-border-radius);
+    background-color: $__petals--white;
+  }
+
+  &--right,
+  &--bottom,
+  &--left {
+    display: flex;
+  }
+
+  &--top &-tabBar,
+  &--bottom &-tabBar {
+    height: var($__petals--tab-bar-nav-height, $petals--tab-bar-nav-height);
+  }
+
+  &--top &-activeTabNav,
+  &--bottom &-activeTabNav {
+    height: calc(var(#{$__petals--tab-bar-nav-height}, #{$petals--tab-bar-nav-height}) + 1px);
+  }
+
+  &--top &-activeTabNav {
+    border-bottom-color: var($__petals--tabs-panes-bg, $petals--tabs-panes-bg);
+  }
+
+  &--bottom {
+    flex-direction: column-reverse;
+  }
+
+  &--bottom &-tabNavs {
+    align-items: flex-end;
+  }
+
+  &--bottom &-activeTabNav {
+    margin-top: -1px;
+    border-top-color: var($__petals--tabs-panes-bg, $petals--tabs-panes-bg);
+  }
+
+  &--right &-tabNavs,
+  &--left &-tabNavs {
+    flex-direction: column;
+  }
+
+  &--right &-panes,
+  &--left &-panes {
+    flex-grow: 1;
+  }
+
+  &--right {
+    flex-direction: row-reverse;
+  }
+
+  &--fixed {
+    padding-top: var($__petals--tab-bar-nav-height, $petals--tab-bar-nav-height);
+  }
+
+  &--fixed,
+  &--fixed &-panes,
+  &--fixed &-pane {
+    height: 100%;
+  }
+
+  &--fixed &-pane {
+    overflow: auto;
+  }
+
+  &--fixed &-tabBar {
+    margin-top: calc(var(#{$__petals--tab-bar-nav-height}, #{$petals--tab-bar-nav-height}) * -1);
+  }
+}
