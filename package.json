@@ -7,7 +7,9 @@
     "clean:site": "rm -rf ./site/.asset-cache",
     "serve": "cd ./site && rake run",
     "predeploy": "npm run clean:site",
-    "deploy": "cd ./site && rake deploy"
+    "deploy": "cd ./site && rake deploy",
+    "petals:patch-version": "cd packages/petals && npm version patch && cd ../../",
+    "petals:release": "cd packages/petals && npm run release"
   },
   "repository": {
     "type": "git",
@@ -20,8 +22,14 @@
   },
   "homepage": "https://github.com/ourai/petals",
   "devDependencies": {
+    "@ntks/eslint-config": "0.0.0",
+    "@ntks/stylelint-config": "0.0.5",
     "@petals/basic": "0.0.0",
     "@petals/box": "0.0.0",
-    "handie": "^1.0.14"
+    "eslint": "^7.21.0",
+    "handie": "^1.0.14",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.12.0",
+    "typescript": "^4.1.3"
   }
 }

@@ -1,0 +1,35 @@
+{
+  "name": "petals-ui",
+  "version": "0.0.0",
+  "description": "Front-end UI components foundation",
+  "main": "dist/index.ts",
+  "module": "dist/index.ts",
+  "typings": "dist/index.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "petals",
+    "ui",
+    "components",
+    "front-end",
+    "frontend"
+  ],
+  "author": "Ourai Lin <ourairyu@gmail.com> (https://ourai.ws/)",
+  "license": "MIT",
+  "homepage": "https://github.com/ourai/petals/tree/master/packages/petals#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ourai/petals.git",
+    "directory": "packages/petals"
+  },
+  "bugs": {
+    "url": "https://github.com/ourai/petals/issues"
+  },
+  "scripts": {
+    "precopy": "rm -rf dist",
+    "copy": "mkdir dist && cp -R src/* dist",
+    "prerelease": "npm run copy",
+    "release": "npm publish"
+  }
+}

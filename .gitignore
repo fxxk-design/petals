@@ -11,5 +11,5 @@ node_modules
 
 /site/_site
 
-/dist
+dist
 /test
