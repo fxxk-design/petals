@@ -29,7 +29,8 @@ interface ITextualFormControl extends IInputtableFormControl<string> {
   readonly maxLength: number;
 }
 
-interface IDateFormControl<ValueType = DateFormControlValue> extends IInputtableFormControl<ValueType> {
+interface IDateFormControl<ValueType = DateFormControlValue>
+  extends IInputtableFormControl<ValueType> {
   readonly format: string;
 }
 
