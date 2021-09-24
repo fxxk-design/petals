@@ -1,10 +1,10 @@
 {
   "name": "petals-ui",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Front-end UI components foundation",
-  "main": "dist/index.ts",
-  "module": "dist/index.ts",
-  "typings": "dist/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -29,7 +29,9 @@
   "scripts": {
     "precopy": "rm -rf dist",
     "copy": "mkdir dist && cp -R src/* dist",
-    "prerelease": "npm run copy",
+    "prebuild": "npm run copy",
+    "build": "tsc",
+    "prerelease": "npm run build",
     "release": "npm publish"
   }
 }

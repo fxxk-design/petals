@@ -8,6 +8,7 @@
     "serve": "cd ./site && rake run",
     "predeploy": "npm run clean:site",
     "deploy": "cd ./site && rake deploy",
+    "petals:build": "cd packages/petals && npm run build",
     "petals:patch-version": "cd packages/petals && npm version patch && cd ../../",
     "petals:release": "cd packages/petals && npm run release"
   },
