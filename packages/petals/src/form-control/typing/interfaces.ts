@@ -1,3 +1,4 @@
+import { CheckableValue } from '../../basic';
 import { FormControlSize, DateFormControlValue, FileFormControlValue } from './aliases';
 
 interface IFormControl<ValueType> {
@@ -34,6 +35,10 @@ interface IDateFormControl<ValueType = DateFormControlValue>
   readonly format: string;
 }
 
+interface ICheckableFormControl<ValueType = CheckableValue> extends IFormControl<ValueType> {
+  readonly checked: boolean;
+}
+
 export {
   IFormControl,
   INumericFormControl,
@@ -41,4 +46,5 @@ export {
   IInputtableFormControl,
   ITextualFormControl,
   IDateFormControl,
+  ICheckableFormControl,
 };

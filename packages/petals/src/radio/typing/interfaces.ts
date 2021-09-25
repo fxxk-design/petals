@@ -1,5 +1,7 @@
-import { IFormControl } from '../../form-control';
+import { ICheckableFormControl } from '../../form-control';
 
-interface IRadioComponent extends IFormControl<number | string | boolean> {}
+interface IRadioComponent extends ICheckableFormControl {}
 
-export { IRadioComponent };
+interface IRadioGroupComponent extends Omit<ICheckableFormControl, 'checked'> {}
+
+export { IRadioComponent, IRadioGroupComponent };
