@@ -1,5 +1,5 @@
-import { IFormControl } from '../../form-control';
+import { ICheckableFormControl } from '../../form-control';
 
-interface ISwitchComponent extends IFormControl<boolean | number | string> {}
+interface ISwitchComponent extends ICheckableFormControl<boolean> {}
 
 export { ISwitchComponent };
