@@ -1,6 +1,3 @@
-import { PopupPosition, PopupTrigger } from '../../popup';
+import { PopupPlacement, PopupTrigger } from '../../popup';
 
-export {
-  PopupPosition as TooltipPosition,
-  PopupTrigger as TooltipTrigger,
-};
+export { PopupPlacement as TooltipPlacement, PopupTrigger as TooltipTrigger };

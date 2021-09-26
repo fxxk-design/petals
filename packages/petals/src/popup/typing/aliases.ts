@@ -1,6 +1,3 @@
 import { ComplexPlacement, CommonTrigger } from '../../basic';
 
-export {
-  ComplexPlacement as PopupPosition,
-  CommonTrigger as PopupTrigger,
-};
+export { ComplexPlacement as PopupPlacement, CommonTrigger as PopupTrigger };

@@ -1,8 +1,8 @@
-import { PopupPosition, PopupTrigger } from './aliases';
+import { PopupPlacement, PopupTrigger } from './aliases';
 
 interface IPopupComponent {
   readonly content: string;
-  readonly position: PopupPosition;
+  readonly placement: PopupPlacement;
   readonly trigger: PopupTrigger;
 }
 
