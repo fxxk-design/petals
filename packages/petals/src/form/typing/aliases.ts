@@ -2,15 +2,15 @@ import { LooseSize } from '../../basic';
 
 type GridType = 'grid' | 'flex';
 
-type FormLayoutType = GridType | 'vertical' | 'inline';
+type FormLayoutType = 'horizontal' | 'vertical' | 'inline';
 
 type FormFieldLabelWidth = LooseSize;
 
-type FormFieldLabelPosition = 'left' | 'top';
+type FormFieldLabelAlignment = 'left' | 'right';
 
 type FormFieldLabelOption = {
   width?: FormFieldLabelWidth;
-  position?: FormFieldLabelPosition;
+  align?: FormFieldLabelAlignment;
 };
 
 type FormFieldValidationOption = {
@@ -23,7 +23,7 @@ export {
   GridType,
   FormLayoutType,
   FormFieldLabelWidth,
-  FormFieldLabelPosition,
+  FormFieldLabelAlignment,
   FormFieldLabelOption,
   FormValidationOption,
 };
