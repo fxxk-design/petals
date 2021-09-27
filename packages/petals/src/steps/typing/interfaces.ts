@@ -1,11 +1,13 @@
+import { DirectionType } from '../../basic';
+
 interface IStepsComponent {
-  direction: string;
-  current: number;
+  readonly direction: DirectionType;
+  readonly activeFlag: number;
 }
 
 interface IStepComponent {
-  title: string;
-  description: string;
+  readonly title: string;
+  readonly content: string;
 }
 
 export { IStepsComponent, IStepComponent };
