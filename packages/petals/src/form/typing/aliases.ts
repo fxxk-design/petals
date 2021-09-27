@@ -1,10 +1,10 @@
-import { LooseSize } from '../../basic';
+import { NumberOrString } from '../../basic';
 
 type GridType = 'grid' | 'flex';
 
 type FormLayoutType = 'horizontal' | 'vertical' | 'inline';
 
-type FormFieldLabelWidth = LooseSize;
+type FormFieldLabelWidth = NumberOrString;
 
 type FormFieldLabelAlignment = 'left' | 'right';
 
