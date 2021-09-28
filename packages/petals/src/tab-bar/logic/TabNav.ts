@@ -42,7 +42,7 @@ class TabNavHeadlessComponent extends BaseHeadlessComponent<ITabNavComponent> {
       classNames.push(disabledClassName);
     }
 
-    return classNames;
+    return [...super.getExtraClassNames(), ...classNames];
   }
 }
 

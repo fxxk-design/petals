@@ -38,7 +38,7 @@ class IconHeadlessComponent extends BaseHeadlessComponent<IIconComponent> {
   }
 
   public getExtraClassNames(): string[] {
-    return this.getFontIconClassNames();
+    return [...this.getFontIconClassNames(), ...super.getExtraClassNames()];
   }
 
   public getSvgIconRef(): string {

@@ -41,7 +41,9 @@ abstract class BaseHeadlessComponent<StructuralComponent = IBaseComponent> {
    * Other class names which won't be scoped
    */
   public getExtraClassNames(): string[] {
-    return [];
+    const { className } = this.sc as any;
+
+    return className ? className.split(' ') : [];
   }
 
   public getDescendantClassName(descendant: string): string {
