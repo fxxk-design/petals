@@ -21,7 +21,7 @@ class IconHeadlessComponent extends BaseHeadlessComponent<IIconComponent> {
     return [...super.getClassNames(), this.getModifierClassName(this.getOption().type)];
   }
 
-  public getExtraClassNames(): string[] {
+  public getFontIconClassNames(): string[] {
     const { ref, type, resolve } = this.getOption();
 
     let classNames: string[] = [];
@@ -35,6 +35,10 @@ class IconHeadlessComponent extends BaseHeadlessComponent<IIconComponent> {
     }
 
     return classNames;
+  }
+
+  public getExtraClassNames(): string[] {
+    return this.getFontIconClassNames();
   }
 
   public getSvgIconRef(): string {
