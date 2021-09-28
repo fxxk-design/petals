@@ -1,6 +1,6 @@
 import { ButtonProps } from '../../button';
-import { PopupPosition as PopconfirmPosition } from '../../popup';
+import { PopupPlacement as PopconfirmPlacement } from '../../popup';
 
 type PopconfirmButton = string | ButtonProps;
 
-export { PopconfirmButton, PopconfirmPosition };
+export { PopconfirmButton, PopconfirmPlacement };
