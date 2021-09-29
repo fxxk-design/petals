@@ -11,7 +11,7 @@ class TabsHeadlessComponent extends BaseHeadlessComponent<ITabsComponent> {
   public getClassNames(): string[] {
     const classNames: string[] = [
       ...super.getClassNames(),
-      this.getModifierClassName(this.sc.tabBarPosition),
+      this.getModifierClassName(this.sc.tabBarPlacement),
     ];
 
     if (this.sc.fixed) {

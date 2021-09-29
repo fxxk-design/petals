@@ -1,9 +1,9 @@
-import { TabNavFlag, TabBarPosition } from '../../tab-bar';
+import { TabNavFlag, TabBarPlacement } from '../../tab-bar';
 
 interface ITabsComponent {
   readonly fixed: boolean;
   readonly activeFlag: TabNavFlag;
-  readonly tabBarPosition: TabBarPosition; // 选项卡显示位置
+  readonly tabBarPlacement: TabBarPlacement; // 选项卡显示位置
   readonly tabBarStretch: boolean; // 选项卡是否拉伸
 }
 

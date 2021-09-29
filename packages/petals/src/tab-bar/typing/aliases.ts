@@ -1,4 +1,4 @@
-import { NumberOrString as TabNavFlag, PlacementType as TabBarPosition } from '../../basic';
+import { NumberOrString as TabNavFlag, PlacementType as TabBarPlacement } from '../../basic';
 
 type TabNavType = {
   label?: string;
@@ -6,4 +6,4 @@ type TabNavType = {
   icon?: boolean;
 };
 
-export { TabNavFlag, TabNavType, TabBarPosition };
+export { TabNavFlag, TabNavType, TabBarPlacement };

@@ -1,1 +1,1 @@
-export { PlacementType as DrawerPosition, LooseSize as DrawerSize } from '../../basic';
+export { PlacementType as DrawerPlacement, NumberOrString as DrawerSize } from '../../basic';
