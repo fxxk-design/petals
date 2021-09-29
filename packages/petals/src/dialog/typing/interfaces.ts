@@ -1,12 +1,12 @@
+import { IModal } from '../../modal';
+
 import { DialogWidth, DialogButton } from './aliases';
 
-interface IDialogComponent {
-  readonly title: string;
+interface IDialogComponent extends IModal {
   readonly width: DialogWidth;
-  readonly visible: boolean;
   readonly centered: boolean;
-  readonly yesButton: DialogButton;
-  readonly noButton: DialogButton;
+  readonly affirmButton: DialogButton;
+  readonly denyButton: DialogButton;
 }
 
 export { IDialogComponent };
