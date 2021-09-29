@@ -5,6 +5,7 @@ interface IPopupComponent {
   readonly placement: PopupPlacement;
   readonly trigger: PopupTrigger;
   readonly disabled: boolean;
+  readonly popupClassName: string;
 }
 
 export { IPopupComponent };
