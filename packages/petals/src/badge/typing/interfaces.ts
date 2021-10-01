@@ -1,12 +1,11 @@
-import { NumberOrString, ProcessStatus, ColorType } from '../../basic';
+import { NumberOrString, ColorType } from '../../basic';
 
 interface IBadgeComponent {
-  count: NumberOrString;
-  text: string;
-  status: ProcessStatus;
-  max: number;
-  dot: boolean;
-  color: ColorType;
+  readonly count: NumberOrString;
+  readonly max: number;
+  readonly text: string;
+  readonly dot: boolean;
+  readonly color: ColorType;
 }
 
 export { IBadgeComponent };
