@@ -1,14 +1,15 @@
-import { getComponentConfig, BaseHeadlessComponent } from '../../basic';
+import { BaseHeadlessComponent } from '../../basic';
 
 import { IListComponent } from '../typing';
+import { getListComponentName } from './utils';
 
 class ListHeadlessComponent extends BaseHeadlessComponent<IListComponent> {
   public getComponentName(): string {
-    return getComponentConfig('list', 'name') || 'List';
+    return getListComponentName();
   }
 
   public getClassNames(): string[] {
-    const classNames: string[] = [this.getComponentName()];
+    const classNames: string[] = super.getClassNames();
 
     if (this.sc.bordered) {
       classNames.push(this.getModifierClassName('bordered'));

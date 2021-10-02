@@ -20,4 +20,9 @@ interface INavMenuItemGroupComponent {
   readonly title: string;
 }
 
-export { INavMenuComponent, INavSubMenuComponent, INavMenuItemComponent, INavMenuItemGroupComponent };
+export {
+  INavMenuComponent,
+  INavSubMenuComponent,
+  INavMenuItemComponent,
+  INavMenuItemGroupComponent,
+};
