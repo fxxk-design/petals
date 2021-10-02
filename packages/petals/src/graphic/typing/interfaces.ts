@@ -5,8 +5,8 @@ interface IGraphicComponent {
   readonly fallback: string;
   readonly alt: string;
   readonly fit: GraphicFitType;
-  onLoad(): void;
-  onError(): boolean;
+  onLoad(evt: Event): void;
+  onError(evt: Event): boolean;
 }
 
 export { IGraphicComponent };
