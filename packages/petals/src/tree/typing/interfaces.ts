@@ -1,16 +1,17 @@
 import { IFormControl } from '../../form-control';
 
-import { TreeData, ConfigurableTreeNodeDataField } from './aliases';
+import { TreeNodeKey, TreeNodeRenderer, TreeData, ConfigurableTreeNodeDataField } from './aliases';
 
-interface ITreeComponent extends IFormControl<string[]> {
+interface ITreeComponent extends IFormControl<TreeNodeKey[]> {
   readonly dataSource: TreeData;
   readonly checkable: boolean;
+  readonly expandedKeys: TreeNodeKey[];
+  readonly selectedKeys: TreeNodeKey[];
   readonly nodeField: ConfigurableTreeNodeDataField;
-  readonly expandedKeys: string[];
-  readonly selectedKeys: string[];
-  onChange(...args: any[]): void;
-  onSelect(...args: any[]): void;
-  onExpand(...args: any[]): void;
+  readonly nodeRenderer: TreeNodeRenderer;
+  onChange(checkedKeys: TreeNodeKey[]): void;
+  onSelect(selectedKeys: TreeNodeKey[]): void;
+  onExpand(expandedKeys: TreeNodeKey[]): void;
 }
 
 export { ITreeComponent };
