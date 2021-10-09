@@ -1,4 +1,6 @@
-import { LooseSize } from '../../typing';
+import classnames from 'classnames';
+
+import { LooseSize, ClassName } from '../typing';
 
 function getDescendantClassName(componentName: string, descendant: string): string {
   return `${componentName}-${descendant}`;
@@ -20,4 +22,8 @@ function normalizeLooseSize(size: LooseSize): string {
   return size;
 }
 
-export { getDescendantClassName, getModifierClassName, normalizeLooseSize };
+function normalizeClassName(className: ClassName): string {
+  return classnames(className);
+}
+
+export { getDescendantClassName, getModifierClassName, normalizeLooseSize, normalizeClassName };

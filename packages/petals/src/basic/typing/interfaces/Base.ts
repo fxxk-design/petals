@@ -1,6 +1,8 @@
+import { ClassName } from '../aliases';
+
 interface IBaseComponent<CtorType = string> {
   readonly tag: CtorType;
-  readonly className: string;
+  readonly className: ClassName;
 }
 
 export { IBaseComponent };

@@ -24,6 +24,10 @@ type TriggerType = CommonTrigger | 'focus';
 
 type StateClassNamePrefix = 'is' | 'has' | 'can';
 
+type VariantClassName = string | Record<string, boolean>;
+
+type ClassName = VariantClassName | VariantClassName[];
+
 export {
   ResizeType,
   AdjustmentType,
@@ -33,6 +37,8 @@ export {
   CommonTrigger,
   TriggerType,
   StateClassNamePrefix,
+  VariantClassName,
+  ClassName,
 };
 
 export * from './basic';

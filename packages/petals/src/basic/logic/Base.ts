@@ -1,5 +1,5 @@
 import { StateClassNamePrefix, IBaseComponent } from '../typing';
-import { getDescendantClassName, getModifierClassName } from './helper/utils';
+import { getDescendantClassName, getModifierClassName, normalizeClassName } from '../helper';
 
 abstract class BaseHeadlessComponent<StructuralComponent = IBaseComponent> {
   /**
@@ -43,7 +43,7 @@ abstract class BaseHeadlessComponent<StructuralComponent = IBaseComponent> {
   public getExtraClassNames(): string[] {
     const { className } = this.sc as any;
 
-    return className ? className.split(' ') : [];
+    return className ? normalizeClassName(className).split(' ') : [];
   }
 
   public getDescendantClassName(descendant: string): string {
