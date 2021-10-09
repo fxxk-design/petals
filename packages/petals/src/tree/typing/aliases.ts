@@ -13,7 +13,22 @@ type TreeNodeData = {
   [key: string]: any;
 };
 
-type TreeNodeRenderer<TreeNode = any> = (data: TreeNodeData) => TreeNode;
+type TreeNodeId = NumberOrString;
+
+type TreeNode = {
+  id: TreeNodeId;
+  level: number;
+  expanded: boolean;
+  checked: boolean;
+  disabled: boolean;
+  indeterminate: boolean;
+  children: TreeNode[];
+};
+
+type TreeNodeRenderer<TreeRenderNode = any> = (
+  data: TreeNodeData,
+  node: TreeNode,
+) => TreeRenderNode;
 
 type TreeData = TreeNodeData[];
 
@@ -23,4 +38,12 @@ type ConfigurableTreeNodeDataField = {
   children?: string;
 };
 
-export { TreeNodeKey, TreeNodeData, TreeNodeRenderer, TreeData, ConfigurableTreeNodeDataField };
+export {
+  TreeNodeKey,
+  TreeNodeData,
+  TreeNodeId,
+  TreeNode,
+  TreeNodeRenderer,
+  TreeData,
+  ConfigurableTreeNodeDataField,
+};
