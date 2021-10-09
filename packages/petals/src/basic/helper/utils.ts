@@ -1,6 +1,7 @@
+import { isArray } from '@ntks/toolbox';
 import classnames from 'classnames';
 
-import { LooseSize, ClassName } from '../typing';
+import { LooseSize, VariantClassName, ClassName } from '../typing';
 
 function getDescendantClassName(componentName: string, descendant: string): string {
   return `${componentName}-${descendant}`;
@@ -23,7 +24,9 @@ function normalizeLooseSize(size: LooseSize): string {
 }
 
 function normalizeClassName(className: ClassName): string {
-  return classnames(className);
+  return isArray(className)
+    ? classnames(...(className as VariantClassName[]))
+    : classnames(className);
 }
 
 export { getDescendantClassName, getModifierClassName, normalizeLooseSize, normalizeClassName };
