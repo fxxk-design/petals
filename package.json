@@ -27,13 +27,11 @@
     "@ntks/stylelint-config": "0.0.5",
     "@petals/basic": "0.0.0",
     "@petals/box": "0.0.0",
+    "classnames": "^2.3.1",
     "eslint": "^7.21.0",
     "handie": "^1.0.14",
     "prettier": "^2.2.1",
     "stylelint": "^13.12.0",
     "typescript": "^4.1.3"
-  },
-  "dependencies": {
-    "classnames": "^2.3.1"
   }
 }
