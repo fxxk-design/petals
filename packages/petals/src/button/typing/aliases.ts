@@ -1,4 +1,4 @@
-import { SizeType } from '../../basic';
+import { SizeType, ClassName } from '../../basic';
 
 type ButtonSize = SizeType;
 
@@ -8,6 +8,7 @@ type ButtonColor = 'primary' | 'danger' | string;
 
 type ButtonProps = {
   text: string;
+  className?: ClassName;
   size?: ButtonSize;
   border?: ButtonBorder;
   color?: ButtonColor;
