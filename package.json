@@ -25,6 +25,7 @@
   "devDependencies": {
     "@ntks/eslint-config": "0.0.0",
     "@ntks/stylelint-config": "0.0.5",
+    "@ntks/toolbox": "0.0.6",
     "@petals/basic": "0.0.0",
     "@petals/box": "0.0.0",
     "classnames": "^2.3.1",
