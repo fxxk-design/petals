@@ -1,0 +1,3 @@
+interface IMessageComponent {}
+
+export { IMessageComponent };

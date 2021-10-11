@@ -21,11 +21,11 @@ type DialogShortcutOptions = {
 type DialogShortcutCallback = (options: DialogShortcutOptions) => void;
 
 type DialogShortcutMethod = {
-  (message: string, options?: DialogShortcutOptions);
-  (message: string, title: string, options?: DialogShortcutOptions);
-  (message: string, affirmButtonHandler: DialogButtonHandler, options?: DialogShortcutOptions);
+  (content: string, options?: DialogShortcutOptions);
+  (content: string, title: string, options?: DialogShortcutOptions);
+  (content: string, affirmButtonHandler: DialogButtonHandler, options?: DialogShortcutOptions);
   (
-    message: string,
+    content: string,
     affirmButtonHandler: DialogButtonHandler,
     denyButtonHandler: DialogButtonHandler,
     options?: DialogShortcutOptions,

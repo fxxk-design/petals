@@ -18,7 +18,7 @@ function generateShortcutMethod(
   callback: DialogShortcutCallback,
 ): DialogShortcutMethod {
   return (
-    message: string,
+    content: string,
     optsOrTitleOrHandler?: string | DialogButtonHandler | DialogShortcutOptions,
     optsOrHandler?: DialogButtonHandler | DialogShortcutOptions,
     options?: DialogShortcutOptions,
@@ -77,7 +77,7 @@ function generateShortcutMethod(
       true,
       {},
       defaultOptions,
-      { title: resolvedTitle || defaultOptions.title, content: message },
+      { title: resolvedTitle || defaultOptions.title, content },
       resolvedOptions,
     );
 
