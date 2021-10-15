@@ -7,15 +7,18 @@ type DialogButtonHandler = (...args: any[]) => void;
 
 type DialogButtonProps = ButtonProps & { handler?: DialogButtonHandler };
 
-type DialogShortcutButton = string | DialogButtonProps;
+type DialogShortcutButton = string | DialogButtonHandler | DialogButtonProps;
 
 type DialogShortcutOptions = {
   type?: DialogShortcutType;
   title?: string;
   content?: string;
+  className?: string;
+  width?: DialogWidth;
   closable?: boolean;
   affirmButton?: DialogShortcutButton;
   denyButton?: DialogShortcutButton;
+  render?: (...args: any[]) => any;
 };
 
 type DialogShortcutCallback = (options: DialogShortcutOptions) => void;
