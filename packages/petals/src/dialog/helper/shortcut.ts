@@ -77,7 +77,7 @@ function generateShortcutMethod(
       true,
       {},
       defaultOptions,
-      { title: resolvedTitle || defaultOptions.title, content },
+      { title: resolvedTitle || defaultOptions.title, content, immediately: true },
       resolvedOptions,
     );
 

@@ -14,8 +14,8 @@ type DialogShortcutOptions = {
   title?: string;
   content?: string;
   className?: string;
-  width?: DialogWidth;
   closable?: boolean;
+  immediately?: boolean; // close immediately when affirm button clicked
   affirmButton?: DialogShortcutButton;
   denyButton?: DialogShortcutButton;
   render?: (...args: any[]) => any;
