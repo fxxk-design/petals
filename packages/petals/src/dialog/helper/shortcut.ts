@@ -10,7 +10,13 @@ import {
 } from '../typing';
 
 function resolveButtonProps(button: DialogShortcutButton): DialogButtonProps {
-  return isString(button) ? { text: button as string } : (button as DialogButtonProps);
+  if (isString(button)) {
+    return { text: button as string };
+  }
+
+  return (isFunction(button)
+    ? { handler: button as DialogButtonHandler }
+    : button) as DialogButtonProps;
 }
 
 function generateShortcutMethod(
@@ -77,7 +83,7 @@ function generateShortcutMethod(
       true,
       {},
       defaultOptions,
-      { title: resolvedTitle || defaultOptions.title, content, immediately: true },
+      { title: resolvedTitle || defaultOptions.title, content, lazy: false, centered: false },
       resolvedOptions,
     );
 

@@ -1,4 +1,8 @@
-import { NumberOrString as DialogWidth, MessageStatus as DialogShortcutType } from '../../basic';
+import {
+  NumberOrString as DialogWidth,
+  MessageStatus as DialogShortcutType,
+  ClassName,
+} from '../../basic';
 import { ButtonProps } from '../../button';
 
 type DialogButton = string | ButtonProps;
@@ -10,12 +14,13 @@ type DialogButtonProps = ButtonProps & { handler?: DialogButtonHandler };
 type DialogShortcutButton = string | DialogButtonHandler | DialogButtonProps;
 
 type DialogShortcutOptions = {
+  className?: ClassName;
   type?: DialogShortcutType;
   title?: string;
   content?: string;
-  className?: string;
   closable?: boolean;
-  immediately?: boolean; // close immediately when affirm button clicked
+  lazy?: boolean; // close lazily when affirm button clicked
+  centered?: boolean;
   affirmButton?: DialogShortcutButton;
   denyButton?: DialogShortcutButton;
   render?: (...args: any[]) => any;

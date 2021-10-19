@@ -1,0 +1,14 @@
+@include component-rules($petals--dialog-shortcut-component-name) {
+  &--centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #{get-selector($petals--dialog-component-name)} {
+      &--alert,
+      &--confirm {
+        top: 0;
+      }
+    }
+  }
+}

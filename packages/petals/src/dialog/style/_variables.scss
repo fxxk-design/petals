@@ -1,12 +1,10 @@
-@import '../../border/style/variables';
-@import '../../box-shadow/style/variables';
-@import '../../popup/style/variables';
-
-@import './properties';
+@import "../../border/style/variables";
+@import "../../box-shadow/style/variables";
+@import "../../popup/style/variables";
+@import "./metadata";
+@import "./properties";
 
 // Modals
-
-$petals--dialog-component-name: 'Dialog' !default;
 
 $petals--dialog-border-radius: var($__petals--border-radius-lg, $petals--border-radius-lg) !default;
 $petals--dialog-box-shadow: none !default;
