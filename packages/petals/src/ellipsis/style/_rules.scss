@@ -1,0 +1,3 @@
+@include component-rules($petals--ellipsis-component-name) {
+  @include ellipsis(true);
+}
