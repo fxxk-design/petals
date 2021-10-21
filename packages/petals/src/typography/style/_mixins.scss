@@ -37,6 +37,10 @@
     text-decoration: underline;
   }
 
+  &--ellipsis {
+    max-width: 100%;
+  }
+
   @if $ignore-boldness == false {
     &--bold {
       font-weight: var($__petals--font-weight-bold, $petals--font-weight-bold);

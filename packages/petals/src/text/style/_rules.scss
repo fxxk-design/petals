@@ -4,4 +4,8 @@
   @include typo-common-rules;
 
   display: inline;
+
+  &--ellipsis {
+    display: inline-block;
+  }
 }
