@@ -7,6 +7,7 @@ interface IPopupComponent {
   readonly visible: boolean;
   readonly disabled: boolean;
   readonly popupClassName: string;
+  readonly appendToBody: boolean;
   onVisibleChange(visible: boolean): void;
 }
 

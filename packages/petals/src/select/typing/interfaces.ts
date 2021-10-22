@@ -4,6 +4,7 @@ import { OptionValueType, SelectValueType } from './aliases';
 
 interface ISelectComponent extends IInputtableFormControl<SelectValueType> {
   readonly multiple: boolean;
+  readonly popupAppendToBody: boolean;
 }
 
 interface ISelectOptionComponent {
