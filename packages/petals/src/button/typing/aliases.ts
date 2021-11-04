@@ -6,6 +6,8 @@ type ButtonBorder = 'solid' | 'dashed' | 'none';
 
 type ButtonColor = 'primary' | 'danger' | string;
 
+type ButtonNativeType = 'button' | 'submit' | 'reset';
+
 type ButtonProps = {
   text: string;
   className?: ClassName;
@@ -16,4 +18,4 @@ type ButtonProps = {
   disabled?: boolean;
 };
 
-export { ButtonSize, ButtonBorder, ButtonColor, ButtonProps };
+export { ButtonSize, ButtonBorder, ButtonColor, ButtonNativeType, ButtonProps };
