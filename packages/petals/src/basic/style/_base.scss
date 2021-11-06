@@ -1,7 +1,1 @@
-/**
- * Base styles for web apps
- */
-
-@import "./helper";
-@import "./vendors/suitcss/suitcss-base/index";
-@import "./base/reset";
+@import "~@petals/basic/style/base";

@@ -35,6 +35,7 @@
     "release": "npm publish"
   },
   "dependencies": {
-    "@ntks/toolbox": "0.0.6"
+    "@ntks/toolbox": "0.0.6",
+    "@petals/basic": "0.0.2"
   }
 }
