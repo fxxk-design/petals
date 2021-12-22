@@ -18,9 +18,9 @@ interface ITreeComponent extends IFormControl<TreeNodeKey[]> {
   readonly nodeField: ConfigurableTreeNodeDataField;
   readonly nodeRenderer: TreeNodeRenderer;
   readonly emptyText: string;
-  onChange(checkedKeys: TreeNodeKey[], data: TreeNodeData[], nodes: TreeNode[]): void;
-  onSelect(selectedKeys: TreeNodeKey[], data: TreeNodeData[], nodes: TreeNode[]): void;
-  onExpand(expandedKeys: TreeNodeKey[], data: TreeNodeData[], nodes: TreeNode[]): void;
+  readonly onChange: (checkedKeys: TreeNodeKey[], data: TreeNodeData[], nodes: TreeNode[]) => void;
+  readonly onSelect: (selectedKeys: TreeNodeKey[], data: TreeNodeData[], nodes: TreeNode[]) => void;
+  readonly onExpand: (expandedKeys: TreeNodeKey[], data: TreeNodeData[], nodes: TreeNode[]) => void;
 }
 
 export { ITreeComponent };
