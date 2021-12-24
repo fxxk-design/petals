@@ -6,7 +6,7 @@ interface IFormControl<ValueType> {
   readonly value: ValueType;
   readonly disabled: boolean;
   readonly readonly: boolean;
-  readonly onChange: (evt: any) => void;
+  readonly onChange: (value: ValueType) => void;
 }
 
 interface INumericFormControl<ValueType = number> extends IFormControl<ValueType> {
@@ -24,7 +24,7 @@ interface IInputtableFormControl<ValueType> extends IFormControl<ValueType> {
   readonly placeholder: string;
   readonly clearable: boolean;
   readonly size: FormControlSize;
-  readonly onInput: (evt: any) => void;
+  readonly onInput: (value: ValueType) => void;
 }
 
 interface ITextualFormControl extends IInputtableFormControl<string> {
