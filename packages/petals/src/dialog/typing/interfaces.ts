@@ -7,6 +7,7 @@ interface IDialogComponent extends IModal {
   readonly centered: boolean;
   readonly affirmButton: DialogButton;
   readonly denyButton: DialogButton;
+  readonly onClose: () => void;
 }
 
 export { IDialogComponent };
