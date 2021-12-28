@@ -9,12 +9,6 @@ interface IFormControl<ValueType> {
   readonly onChange: (value: ValueType) => void;
 }
 
-interface INumericFormControl<ValueType = number> extends IFormControl<ValueType> {
-  readonly min: number;
-  readonly max: number;
-  readonly step: number;
-}
-
 interface IFileFormControl<ValueType = FileFormControlValue> extends IFormControl<ValueType> {
   readonly accept: string;
   readonly multiple: boolean;
@@ -25,6 +19,12 @@ interface IInputtableFormControl<ValueType> extends IFormControl<ValueType> {
   readonly clearable: boolean;
   readonly size: FormControlSize;
   readonly onInput: (value: ValueType) => void;
+}
+
+interface INumericFormControl<ValueType = number> extends IInputtableFormControl<ValueType> {
+  readonly min: number;
+  readonly max: number;
+  readonly step: number;
 }
 
 interface ITextualFormControl extends IInputtableFormControl<string> {
