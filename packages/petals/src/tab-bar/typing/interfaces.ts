@@ -1,4 +1,4 @@
-import { TabNavFlag, TabNavType } from './aliases';
+import { TabNavFlag, TabThemeType, TabNavType } from './aliases';
 
 interface ITabNavComponent {
   readonly flag: TabNavFlag;
@@ -10,6 +10,7 @@ interface ITabNavComponent {
 
 interface ITabBarComponent {
   readonly navs: TabNavType[];
+  readonly theme: TabThemeType;
   readonly activeFlag: TabNavFlag;
   readonly stretch: boolean; // 选项卡是否拉伸
   readonly prevButtonIcon: string;
