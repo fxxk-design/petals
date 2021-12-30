@@ -16,9 +16,7 @@ interface INavMenuItemComponent<LinkHref = string> extends IMenuItemComponent {
   readonly href: LinkHref;
 }
 
-interface INavMenuItemGroupComponent {
-  readonly title: string;
-}
+interface INavMenuItemGroupComponent extends Pick<IMenuItemComponent, 'flag' | 'title'> {}
 
 export {
   INavMenuComponent,
