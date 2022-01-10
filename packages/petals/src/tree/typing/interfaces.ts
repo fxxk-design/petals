@@ -9,7 +9,7 @@ import {
   ConfigurableTreeNodeDataField,
 } from './aliases';
 
-interface ITreeComponent extends IFormControl<TreeNodeKey[]> {
+interface ITreeComponent extends Omit<IFormControl<TreeNodeKey[]>, 'onChange'> {
   readonly dataSource: TreeData;
   readonly checkable: boolean;
   readonly expanded: boolean;
