@@ -1,4 +1,7 @@
-interface IMenuComponent {}
+interface IMenuComponent {
+  readonly activeFlag: string;
+  readonly openFlags: string[];
+}
 
 interface IMenuItemComponent {
   readonly flag: string;
