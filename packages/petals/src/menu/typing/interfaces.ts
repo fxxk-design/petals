@@ -1,5 +1,7 @@
 interface IMenuComponent {
+  readonly defaultActiveFlag: string;
   readonly activeFlag: string;
+  readonly defaultOpenFlags: string[];
   readonly openFlags: string[];
 }
 
