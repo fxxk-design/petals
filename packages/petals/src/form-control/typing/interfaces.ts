@@ -14,6 +14,10 @@ interface IFileFormControl<ValueType = FileFormControlValue> extends IFormContro
   readonly multiple: boolean;
 }
 
+interface ICheckableFormControl<ValueType = CheckableValue> extends IFormControl<ValueType> {
+  readonly checked: boolean;
+}
+
 interface IInputtableFormControl<ValueType> extends IFormControl<ValueType> {
   readonly placeholder: string;
   readonly clearable: boolean;
@@ -32,21 +36,39 @@ interface ITextualFormControl extends IInputtableFormControl<string> {
   readonly maxLength: number;
 }
 
-interface IDateFormControl<ValueType = DateFormControlValue>
-  extends IInputtableFormControl<ValueType> {
+interface IBaseDateFormControl<
+  ValueType extends DateFormControlValue | DateFormControlValue[],
+  PickerOption
+> extends Omit<IInputtableFormControl<ValueType>, 'onChange' | 'onInput'> {
+  readonly inputtable: boolean;
   readonly format: string;
+  readonly pickerOption: PickerOption;
+  readonly popupClassName: string;
 }
 
-interface ICheckableFormControl<ValueType = CheckableValue> extends IFormControl<ValueType> {
-  readonly checked: boolean;
+interface IDateFormControl<
+  ValueType extends DateFormControlValue,
+  PickerOption extends Record<string, any>
+> extends IBaseDateFormControl<ValueType, PickerOption> {
+  readonly onChange: (value: ValueType, date: Date | null) => void;
+}
+
+interface IDateRangeFormControl<
+  ValueType extends DateFormControlValue[],
+  PickerOption extends Record<string, any>
+> extends Omit<IBaseDateFormControl<ValueType, PickerOption>, 'placeholder'> {
+  readonly placeholder: string[];
+  readonly separator: string;
+  readonly onChange: (value: ValueType, dates: (Date | null)[]) => void;
 }
 
 export {
   IFormControl,
   INumericFormControl,
   IFileFormControl,
+  ICheckableFormControl,
   IInputtableFormControl,
   ITextualFormControl,
   IDateFormControl,
-  ICheckableFormControl,
+  IDateRangeFormControl,
 };

@@ -1,4 +1,4 @@
-type DateFormControlValue = string | Date;
+type DateFormControlValue = number | string | Date;
 
 type FileFormControlValue = File;
 
