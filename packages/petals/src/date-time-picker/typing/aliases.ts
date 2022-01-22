@@ -1,6 +1,6 @@
-interface DateRangePickerOption {
+interface DateTimePickerOption {
   readonly disableDate?: (date: Date) => boolean;
   readonly showNow?: boolean;
 }
 
-export { DateRangePickerOption };
+export { DateTimePickerOption };
