@@ -1,5 +1,8 @@
-import { INumericFormControl } from '../../form-control';
+import { FormControlPrefixAndSuffix, INumericFormControl } from '../../form-control';
 
-interface INumberInputComponent extends INumericFormControl {}
+interface INumberInputComponent extends INumericFormControl {
+  readonly prefix: string | FormControlPrefixAndSuffix;
+  readonly suffix: string | FormControlPrefixAndSuffix;
+}
 
 export { INumberInputComponent };
