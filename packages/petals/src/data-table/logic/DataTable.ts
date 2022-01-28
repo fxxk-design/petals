@@ -6,6 +6,16 @@ class DataTableHeadlessComponent extends BaseHeadlessComponent<IDataTableCompone
   public getComponentName(): string {
     return getComponentConfig('dataTable', 'name') || 'DataTable';
   }
+
+  public getClassNames(): string[] {
+    const classNames = super.getClassNames();
+
+    if (this.sc.autoHeight !== true) {
+      classNames.push(this.getModifierClassName('fixedHeight'));
+    }
+
+    return classNames;
+  }
 }
 
 export { DataTableHeadlessComponent };

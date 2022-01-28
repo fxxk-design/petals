@@ -1,14 +1,6 @@
 @include component-rules($petals--data-table-component-name) {
   $pagination-height: 68px;
 
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-
-  &-tableWrapper {
-    flex-grow: 1;
-  }
-
   &-table {
     width: 100%;
   }
@@ -18,5 +10,15 @@
     flex-basis: $pagination-height;
     height: $pagination-height;
     padding: 19px 20px 0;
+  }
+
+  &--fixedHeight {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &--fixedHeight &-tableWrapper {
+    flex-grow: 1;
   }
 }

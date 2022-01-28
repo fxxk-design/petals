@@ -10,6 +10,7 @@ interface IDataTableComponent {
   readonly pageSize: number;
   readonly total: number;
   readonly pageSizes: number[];
+  readonly autoHeight: boolean;
   readonly onSelectionChange: (records: Record<string, any>[]) => void;
   readonly onCurrentChange: (currentPage: number) => void;
   readonly onSizeChange: (pageSize: number) => void;
