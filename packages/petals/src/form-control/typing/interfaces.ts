@@ -38,7 +38,7 @@ interface ITextualFormControl extends IInputtableFormControl<string> {
 
 interface IBaseDateFormControl<
   ValueType extends DateFormControlValue | DateFormControlValue[],
-  PickerOption
+  PickerOption,
 > extends Omit<IInputtableFormControl<ValueType>, 'onChange' | 'onInput'> {
   readonly inputtable: boolean;
   readonly format: string;
@@ -48,14 +48,14 @@ interface IBaseDateFormControl<
 
 interface IDateFormControl<
   ValueType extends DateFormControlValue,
-  PickerOption extends Record<string, any>
+  PickerOption extends Record<string, any>,
 > extends IBaseDateFormControl<ValueType, PickerOption> {
   readonly onChange: (value: ValueType, date: Date | null) => void;
 }
 
 interface IDateRangeFormControl<
   ValueType extends DateFormControlValue[],
-  PickerOption extends Record<string, any>
+  PickerOption extends Record<string, any>,
 > extends Omit<IBaseDateFormControl<ValueType, PickerOption>, 'placeholder'> {
   readonly placeholder: string[];
   readonly separator: string;
