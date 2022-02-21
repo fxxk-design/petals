@@ -1,6 +1,6 @@
 {
   "name": "petals-ui",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Front-end UI components foundation",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -36,6 +36,6 @@
   },
   "dependencies": {
     "@ntks/toolbox": "0.0.6",
-    "@petals/basic": "0.0.3"
+    "@petals/basic": "0.0.4"
   }
 }
