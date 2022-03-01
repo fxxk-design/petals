@@ -2,7 +2,7 @@ import { IInputtableFormControl } from '../../form-control';
 
 import { OptionValueType, SelectValueType } from './aliases';
 
-interface ISelectComponent extends IInputtableFormControl<SelectValueType> {
+interface ISelectComponent extends Omit<IInputtableFormControl<SelectValueType>, 'onInput'> {
   readonly multiple: boolean;
   readonly popupAppendToBody: boolean;
 }
