@@ -18,14 +18,16 @@ interface ICheckableFormControl<ValueType = CheckableValue> extends IFormControl
   readonly checked: boolean;
 }
 
-interface IInputtableFormControl<ValueType> extends IFormControl<ValueType> {
+interface IInputtableFormControl<ValueType, InputValueType = ValueType>
+  extends IFormControl<ValueType> {
   readonly placeholder: string;
   readonly clearable: boolean;
   readonly size: FormControlSize;
-  readonly onInput: (value: ValueType) => void;
+  readonly onInput: (value: InputValueType) => void;
 }
 
-interface INumericFormControl<ValueType = number> extends IInputtableFormControl<ValueType> {
+interface INumericFormControl<ValueType = number>
+  extends IInputtableFormControl<ValueType, string> {
   readonly min: number;
   readonly max: number;
   readonly step: number;
@@ -38,7 +40,7 @@ interface ITextualFormControl extends IInputtableFormControl<string> {
 
 interface IBaseDateFormControl<
   ValueType extends DateFormControlValue | DateFormControlValue[],
-  PickerOption,
+  PickerOption
 > extends Omit<IInputtableFormControl<ValueType>, 'onChange' | 'onInput'> {
   readonly inputtable: boolean;
   readonly format: string;
@@ -48,14 +50,14 @@ interface IBaseDateFormControl<
 
 interface IDateFormControl<
   ValueType extends DateFormControlValue,
-  PickerOption extends Record<string, any>,
+  PickerOption extends Record<string, any>
 > extends IBaseDateFormControl<ValueType, PickerOption> {
   readonly onChange: (value: ValueType, date: Date | null) => void;
 }
 
 interface IDateRangeFormControl<
   ValueType extends DateFormControlValue[],
-  PickerOption extends Record<string, any>,
+  PickerOption extends Record<string, any>
 > extends Omit<IBaseDateFormControl<ValueType, PickerOption>, 'placeholder'> {
   readonly placeholder: string[];
   readonly separator: string;
