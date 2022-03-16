@@ -7,7 +7,7 @@ interface IStepsComponent {
 
 interface IStepComponent {
   readonly title: string;
-  readonly content: string;
+  readonly description: string;
 }
 
 export { IStepsComponent, IStepComponent };
