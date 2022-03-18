@@ -3,6 +3,7 @@ interface IMenuComponent {
   readonly activeFlag: string;
   readonly defaultOpenFlags: string[];
   readonly openFlags: string[];
+  readonly onSelect: (flag: string) => void;
 }
 
 interface IMenuItemComponent {
