@@ -7,6 +7,7 @@ interface ITransferComponent extends IFormControl<string[]> {
   readonly titles: string[];
   readonly operationText: string[];
   readonly filterable: boolean;
+  readonly onSelect: (sourceSelected: string[], targetSelected: string[]) => void;
 }
 
 export { ITransferComponent };
