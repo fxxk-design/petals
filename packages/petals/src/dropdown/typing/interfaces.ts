@@ -4,7 +4,7 @@ import { DropdownMenuTrigger, DropdownMenuPlacement } from './aliases';
 
 interface IDropdownComponent {
   readonly trigger: DropdownMenuTrigger;
-  readonly position: DropdownMenuPlacement;
+  readonly placement: DropdownMenuPlacement;
 }
 
 interface IDropdownMenuComponent extends IMenuComponent {}
