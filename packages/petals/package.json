@@ -1,6 +1,6 @@
 {
   "name": "petals-ui",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "Front-end UI components foundation",
   "main": "dist/index.js",
   "module": "dist/index.js",
