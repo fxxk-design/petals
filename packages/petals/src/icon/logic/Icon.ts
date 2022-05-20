@@ -27,7 +27,7 @@ class IconHeadlessComponent extends BaseHeadlessComponent<IIconComponent> {
     let classNames: string[] = [];
 
     if (type === 'font' && typeof resolve === 'function') {
-      const resolved: string | string[] = resolve(ref);
+      const resolved = resolve(ref);
 
       if (typeof resolved === 'string' || Array.isArray(resolved)) {
         classNames = ([] as string[]).concat(resolved);
@@ -44,7 +44,17 @@ class IconHeadlessComponent extends BaseHeadlessComponent<IIconComponent> {
   public getSvgIconRef(): string {
     const { ref, type, resolve } = this.getOption();
 
-    return type === 'svg' && typeof resolve === 'function' ? (resolve(ref) as string) : '';
+    let iconRef: string = '';
+
+    if (type === 'svg' && typeof resolve === 'function') {
+      const resolved = resolve(ref);
+
+      if (typeof resolved === 'string') {
+        iconRef = resolved;
+      }
+    }
+
+    return iconRef;
   }
 }
 
