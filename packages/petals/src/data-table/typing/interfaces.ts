@@ -1,4 +1,4 @@
-import { ColumnProps } from './aliases';
+import { DensityType, ColumnProps } from './aliases';
 
 interface IDataTableComponent {
   readonly dataSource: Record<string, any>[];
@@ -11,6 +11,7 @@ interface IDataTableComponent {
   readonly total: number;
   readonly pageSizes: number[];
   readonly autoHeight: boolean;
+  readonly density: DensityType;
   readonly onSelectionChange: (records: Record<string, any>[]) => void;
   readonly onCurrentChange: (currentPage: number) => void;
   readonly onSizeChange: (pageSize: number) => void;

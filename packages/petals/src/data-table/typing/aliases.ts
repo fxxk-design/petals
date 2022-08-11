@@ -1,5 +1,7 @@
 import { NumberOrString, HorizontalAlignment } from '../../basic';
 
+type DensityType = 'low' | 'medium' | 'high';
+
 type ColumnType = 'index' | 'selection' | 'expand';
 
 type ColumnProps = {
@@ -16,4 +18,4 @@ type ColumnProps = {
   render?: (...args: any[]) => any;
 };
 
-export { ColumnProps };
+export { DensityType, ColumnProps };
