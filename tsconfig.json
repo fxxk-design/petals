@@ -18,5 +18,5 @@
     "baseUrl": ".",
     "paths": {}
   },
-  "include": ["packages/petals/src"]
+  "include": ["packages/*/src"]
 }

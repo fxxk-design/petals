@@ -1,0 +1,47 @@
+{
+  "name": "@petals/basic",
+  "version": "0.0.4",
+  "description": "CSS base styles for web apps",
+  "main": "index.js",
+  "module": "index.js",
+  "typings": "index.d.ts",
+  "files": [
+    "*"
+  ],
+  "keywords": [
+    "petals",
+    "ui",
+    "components",
+    "front-end",
+    "frontend"
+  ],
+  "scripts": {
+    "precopysource": "rm -rf dist",
+    "copysource": "mkdir dist && cp -R src/* dist",
+    "prebuildstyle": "rm -rf dist/style",
+    "buildstyle": "gulp",
+    "prebuild": "npm run copysource",
+    "build": "tsc && npm run buildstyle",
+    "precopy": "rm -rf dist/package*.json dist/*.md",
+    "copy": "cp package*.json *.md dist",
+    "prerelease": "npm run build && npm run copy",
+    "release": "cd dist && npm publish --access=public",
+    "bump:major": "npm version major && npm run release",
+    "bump:minor": "npm version minor && npm run release",
+    "bump:patch": "npm version patch && npm run release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petals-ui/petals.git",
+    "directory": "packages/basic"
+  },
+  "author": "Ourai Lin <ourairyu@gmail.com> (https://ourai.ws/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/petals-ui/petals/issues"
+  },
+  "homepage": "https://petals.fxxk.design",
+  "dependencies": {
+    "@ntks/toolbox": "0.0.6"
+  }
+}

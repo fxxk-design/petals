@@ -1,0 +1,34 @@
+{
+  "name": "petals-basic",
+  "homepage": "https://github.com/petals/basic",
+  "authors": [
+    "Ourai Lin <ourairyu@gmail.com>"
+  ],
+  "description": "CSS framework following SUIT CSS naming conventions",
+  "main": [
+    "scss/_all.scss",
+    "css/all.css"
+  ],
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "helper"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.json",
+    "*.log",
+    "*.md",
+    "gulpfile.js",
+    "bower_components",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "suitcss-sass-0.1.0": "suitcss-sass#0.1.0",
+    "trick-1.0.3": "packagent/trick#1.0.3"
+  }
+}

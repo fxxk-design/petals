@@ -142,11 +142,8 @@ GEM
     nuggets (1.0.0)
     octokit (4.2.0)
       sawyer (~> 0.6.0, >= 0.5.3)
-    posix-spawn (0.3.11)
     public_suffix (1.5.3)
-    pygments.rb (0.6.3)
-      posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.2.0)
+    pygments.rb (2.3.0)
     rack (1.6.4)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
@@ -176,7 +173,6 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby
@@ -196,8 +192,8 @@ DEPENDENCIES
   jekyll-tagging
   jekyll-tagging-related_posts
   jekyll_version_plugin
-  pygments.rb
+  pygments.rb (~> 2.3)
   uglifier
 
 BUNDLED WITH
-   1.16.4
+   2.0.2

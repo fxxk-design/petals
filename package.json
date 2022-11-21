@@ -1,11 +1,11 @@
 {
-  "name": "petals",
+  "name": "@petals/monorepo",
   "version": "0.0.0",
-  "description": "CSS components foundation for Buds",
+  "description": "Born for component-based front-end development",
   "private": true,
   "scripts": {
     "clean:site": "rm -rf ./site/.asset-cache",
-    "serve": "cd ./site && rake run",
+    "start": "cd ./site && rake run",
     "predeploy": "npm run clean:site",
     "deploy": "cd ./site && rake deploy",
     "petals:build": "cd packages/petals && npm run build",
@@ -14,21 +14,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ourai/petals.git"
+    "url": "git+https://github.com/petals-ui/petals.git"
   },
   "author": "Ourai Lin <ourairyu@gmail.com> (https://ourai.ws/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ourai/petals/issues"
+    "url": "https://github.com/petals-ui/petals/issues"
   },
-  "homepage": "https://github.com/ourai/petals",
+  "homepage": "https://petals.fxxk.design",
   "devDependencies": {
     "@ntks/eslint-config": "0.0.0",
     "@ntks/stylelint-config": "0.0.5",
-    "@petals/basic": "0.0.4",
-    "@petals/box": "0.0.0",
+    "@ntks/toolbox": "0.0.6",
     "eslint": "^7.21.0",
-    "handie": "^1.0.14",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-shopify-sass": "^0.3.3",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-strip-css-comments": "^2.0.0",
     "prettier": "^2.2.1",
     "stylelint": "^13.12.0",
     "typescript": "^4.1.3"

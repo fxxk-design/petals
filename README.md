@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://oss.ourai.ws/petals/">
+  <a href="https://petals.fxxk.design/">
     <img src="https://avatars3.githubusercontent.com/u/73979619?s=200&v=4" alt="Petals logo" width="200">
   </a>
 </p>
@@ -7,7 +7,7 @@
 <p align="center">
   Born for component-based front-end development, and provides atomic components for <a href="https://github.com/ourai/buds">Buds</a>.
   <br>
-  <a href="https://oss.ourai.ws/petals/docs/"><strong>Explore Petals docs »</strong></a>
+  <a href="https://petals.fxxk.design/"><strong>Explore Petals docs »</strong></a>
 </p>
 
 ## Composition

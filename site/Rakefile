@@ -42,7 +42,7 @@ task :deploy do
   cd dir do
     current_time = Time.now.strftime("%Y-%m-%d %H:%M:%S")
 
-    system "touch .nojekyll"
+    system "rm -rf CNAME && touch .nojekyll"
     system "git add -A"
     system "git commit -m 'build: generate on #{current_time}'"
     system "git push origin #{git_branch}"

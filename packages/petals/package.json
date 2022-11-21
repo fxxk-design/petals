@@ -17,14 +17,14 @@
   ],
   "author": "Ourai Lin <ourairyu@gmail.com> (https://ourai.ws/)",
   "license": "MIT",
-  "homepage": "https://github.com/ourai/petals/tree/master/packages/petals#readme",
+  "homepage": "https://petals.fxxk.design",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ourai/petals.git",
+    "url": "git+https://github.com/petals-ui/petals.git",
     "directory": "packages/petals"
   },
   "bugs": {
-    "url": "https://github.com/ourai/petals/issues"
+    "url": "https://github.com/petals-ui/petals/issues"
   },
   "scripts": {
     "precopy": "rm -rf dist",

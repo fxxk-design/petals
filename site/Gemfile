@@ -3,7 +3,7 @@ source 'https://gems.ruby-china.com'
 gem 'jekyll', '~> 3.0'
 gem 'github-pages', '50'
 
-gem 'pygments.rb'
+gem "pygments.rb", "~> 2.3"
 
 gem 'compass'
 gem 'bootstrap-sass'
