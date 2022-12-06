@@ -8,7 +8,7 @@
 - CSS 工具类（基于 [SUIT CSS utilities](https://github.com/suitcss/utils)）
 - Sass 变量、函数和混入（基于 [Trick](https://github.com/ourai/trick)）
 
-欢迎更加深入地了解 [Petals](https://oss.ourai.ws/petals/)。 ;-)
+欢迎更加深入地了解 [Petals](https://petals.fxxk.design/)。 ;-)
 
 ## 用法
 
